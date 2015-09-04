@@ -1,0 +1,33 @@
+<div class="container">
+  <h2 class="type-neutral-11">ng-repeat Table</h2>
+  <div class="table-scrollable table-scrollable-sm">
+    <div class="table-scrollable-header">
+      <table class="table table-data table-light">
+        <thead>
+          <tr>
+            <th width="10%">#</th>
+            <th width="16%">Status</th>
+            <th width="12%">CPU</th>
+            <th width="16%">Memory</th>
+            <th width="16%">Disk</th>
+            <th width="30%">Uptime</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="table-scrollable-body">
+      <table class="table table-data table-light">
+        <tbody>
+          <tr ng-repeat="item in dataTable">
+            <td width="10%">{{ item.percent }}</td>
+            <td width="16%">{{ item.status }}</td>
+            <td width="12%">{{ item.cpu }}%</td>
+            <td width="16%">{{ item.memory }} MB</td>
+            <td width="16%">{{ item.disk }} MB</td>
+            <td width="30%">{{ item.uptime }} min</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

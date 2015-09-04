@@ -8,6 +8,28 @@ body {
   height: 100%;
 }
 
+.main-navigation {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 25px;
+
+  li {
+    &.active {
+      a {
+        box-shadow: 0 1px 0 0 white;
+      }
+    }
+
+    a {
+      padding-bottom: 8px;
+      @include transition(box-shadow .2s ease-in-out);
+    }
+  }
+}
+
 .main, .hero {
   height: 100vh;
 }

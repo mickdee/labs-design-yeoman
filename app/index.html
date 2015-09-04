@@ -21,14 +21,29 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
+    <nav class="main-navigation txt-r">
+      <ul class="list-inline mbn">
+        <li class="mrl" ui-sref-active="active">
+          <a class="link-text type-neutral-11" ui-sref="home">
+            <i class="fa fa-home"></i> Home
+          </a>    
+        </li>
+        <li ui-sref-active="active">
+          <a class="link-text type-neutral-11" ui-sref="examples">
+            <i class="fa fa-pencil"></i> Examples
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="main bg-dark-2 bg-glow">
+      <div class="pane">
+        <div ng-controller="MainCtrl">
+          <div class="aligner txt-c hero" ui-view>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+    </section>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -52,6 +67,7 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/pivotal-ui/release/pui-v2.0.0-alpha.0/pivotal-ui.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/chance/chance.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
