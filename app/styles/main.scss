@@ -1,0 +1,13 @@
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+// bower:scss
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+
+body {
+  height: 100%;
+}
+
+.main, .hero {
+  height: 100vh;
+}
