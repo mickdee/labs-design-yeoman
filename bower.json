@@ -8,7 +8,6 @@
     "angular-resource": "^1.3.0",
     "angular-sanitize": "^1.3.0",
     "angular-touch": "^1.3.0",
-    "pivotal-ui": "https://github.com/pivotal-cf/pivotal-ui.git#v2.0.0-alpha.0",
     "angular-ui-router": "~0.2.15",
     "font-awesome": "~4.4.0",
     "chance": "~0.7.7"
@@ -17,12 +16,6 @@
     "angular-mocks": "^1.3.0"
   },
   "overrides": {
-    "pivotal-ui": {
-      "main": [
-        "./release/pui-v2.0.0-alpha.0/pivotal-ui.min.css",
-        "./release/pui-v2.0.0-alpha.0/pivotal-ui.min.js"
-      ]
-    }
   },
   "appPath": "app",
   "moduleName": "labsDesignYeoman"
