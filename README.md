@@ -16,6 +16,6 @@ To enable password protection of your prototype, update `Staticfile.auth` with c
 
 To push your app to CF, navigate to the `/dist` folder and use the CF command line interface: `cf push name-of-my-app -m 64M -b https://github.com/cloudfoundry/staticfile-buildpack.git`  
 
-Or use the `Makefile` by typing `make` into your console
+Or use the `Makefile` by typing `make` into your console (change the app name)
 
 Otherwise, update `manifest.yml` with the name of your Cloud Foundry app and run `cf push` from ANY folder for easy deployment.
