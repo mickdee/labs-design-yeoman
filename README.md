@@ -18,4 +18,8 @@ To push your app to CF, navigate to the `/dist` folder and use the CF command li
 
 Or use the `Makefile` by typing `make` into your console (change the app name)
 
-Otherwise, update `manifest.yml` with the name of your Cloud Foundry app and run `cf push` from ANY folder for easy deployment.
+Otherwise, update `manifest.yml` with the name of your Cloud Foundry app and run `cf push` from ANY folder for easy deployment.  
+
+## Setup
+Run `./setup.sh` to remove the Git remote & check to see if you have node & grunt installed  
+If you do not have permissions to run `./setup.sh` -- run `sh setup.sh` or set executable permission via `chmod +x file.sh`
